@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -21,6 +21,7 @@ function App() {
         <Route path="/user" element={<CreateUser/>} />
       </Routes>
     </BrowserRouter>
+    
   );
 }
 

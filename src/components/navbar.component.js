@@ -9,7 +9,7 @@ class Navbar extends Component {
           ExcerTracker
         </Link>
         <div className="collapse navbar-collapse">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav mr-auto">
             <li className="navbar-item">
               <Link to="/" className="nav-link">
                 Excercises

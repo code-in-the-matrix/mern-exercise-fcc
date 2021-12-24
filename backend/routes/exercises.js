@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+
 const Exercise = require("../models/exercise.model");
 
 router.route("/").get((req, res) => {
@@ -31,9 +32,9 @@ router.route("/:id").delete((req, res) => {
     .then(() => res.json("Exercise deleted"))
     .catch((err) => res.status(404).json(err));
 });
-router.route("/:id").patch((req, res) => {
+router.route("/edit/:id").patch((req, res) => {
   Exercise.findByIdAndUpdate(req.params.id,req.body)
-    .then(() => res.json("Exercise deleted"))
+    .then(() => res.json("Exercise updated"))
     .catch((err) => res.status(404).json(err));
 });
 
